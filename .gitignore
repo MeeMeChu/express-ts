@@ -1,0 +1,8 @@
+node_modules
+*.tar
+db
+.Ds_Store
+src/**/*.js
+src/*.js
+config/**/*.js
+src/logs/*
