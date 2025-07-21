@@ -6,3 +6,6 @@ src/**/*.js
 src/*.js
 config/**/*.js
 src/logs/*
+dist/
+
+.env

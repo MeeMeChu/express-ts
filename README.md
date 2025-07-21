@@ -1,6 +1,6 @@
-# ExpressTS
+# 🚀 Express + TypeScript Boilerplate
 
-  <h2>ExpressTS</h2>
+  <h2>Express TypeScript</h2>
 
 ## Installation
 

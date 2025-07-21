@@ -5,22 +5,27 @@
   "license": "MIT",
   "author": "MeeMeChu",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "node dist/app.js",
     "build": "tsc -p .",
-    "dev": "concurrently -k \"tsc -p . -w\" \"nodemon -r dotenv/config -r @babel/register src/app.js\""
+    "dev": "concurrently -k \"tsc -p . -w\" \"nodemon -r dotenv/config -r @babel/register -r tsconfig-paths/register src/app.ts\""
   },
   "dependencies": {
     "config": "^3.3.12",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0",
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/register": "^7.25.9",
+    "babel-plugin-module-resolver": "^5.0.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.26.4",
-    "@babel/core": "^7.26.9", 
-    "@babel/node": "^7.26.0",
-    "@babel/preset-env": "^7.26.9",
-    "@babel/preset-typescript": "^7.26.0",
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
     "@babel/register": "^7.25.9",
     "@types/config": "^3.3.5",
     "@types/cors": "^2.8.17",
