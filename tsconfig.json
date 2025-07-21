@@ -9,13 +9,17 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    
     "baseUrl": "./src",
     "paths": {
       "@controller/*": ["router/v1/controller/*"],
-      "@router/*": ["router/v1/*"],
-    },
+      "@router/*": ["router/v1/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
