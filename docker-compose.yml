@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  api:
+    container_name: express-ts-api
+    image: express-ts-api:${VERSION}
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    restart: always
+    networks:
+      - api-network
+
+networks:
+  api-network:
+    driver: bridge

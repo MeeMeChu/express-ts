@@ -1,0 +1,8 @@
+apps:
+  script: 'dist/app.js'
+  node_args: ' -r @babel/register -r dotenv/config'
+  name: 'express-ts'
+  env:
+    NODE_ENV: production
+  max_restarts: 300
+  restart_delay: 600000

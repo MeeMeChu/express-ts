@@ -12,14 +12,12 @@
     "baseUrl": "./src",
     "paths": {
       "@controller/*": ["router/v1/controller/*"],
-      "@router/*": ["router/v1/*"]
-    }
+      "@model/*": ["model/*"],
+      "@lib/*": ["lib/*"],
+      "@service/*": ["service/*"],
+      "@router/*": ["router/v1/*"],
+    },
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["src/**/*.ts", "src/*.ts"],
+  "exclude": ["node_modules"]
 }

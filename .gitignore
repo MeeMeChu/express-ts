@@ -6,6 +6,9 @@ src/**/*.js
 src/*.js
 config/**/*.js
 src/logs/*
+
+# Ignore build output
 dist/
 
 .env
+.env.prod
