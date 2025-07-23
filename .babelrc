@@ -8,11 +8,15 @@
       "module-resolver",
       {
         "alias": {
-          "@router": "./src/router/v1",
-          "@controller": "./src/router/v1/controller"
+          "@service": "./dist/service",
+          "@lib": "./dist/lib",
+          "@model": "./dist/model",
+          "@router": "./dist/router/v1",
+          "@controller": "./dist/router/v1/controller",
+          "@middleware": "./dist/router/v1/middleware",
+          "@auth": "./dist/router/v1/auth"
         }
       }
     ]
-  ],
-  "extensions": [".js", ".ts"]
+  ]
 }
