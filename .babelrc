@@ -8,13 +8,18 @@
       "module-resolver",
       {
         "alias": {
+          "@config": "./dist/config",
           "@service": "./dist/service",
           "@lib": "./dist/lib",
+          "@util": "./dist/util",
           "@model": "./dist/model",
           "@router": "./dist/router/v1",
-          "@controller": "./dist/router/v1/controller",
-          "@middleware": "./dist/router/v1/middleware",
-          "@auth": "./dist/router/v1/auth"
+          "@controller": "./dist/controller",
+          "@middleware": "./dist/middleware",
+          "@helper": "./dist/helper",
+          "@db-config": "./dist/db-config",
+          "@job": "./dist/job",
+          "@components": "./dist/components"
         }
       }
     ]
